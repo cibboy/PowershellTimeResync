@@ -1,5 +1,5 @@
 # PowershellTimeResync
-A script for time resync on those computer where the BIOS battery is broken a system time is reset at every boot.
+A script for resyncing time on those computer where the BIOS battery is broken and system time is reset at every boot.
 
 It reads the current ntp server from the w32time service, performs an ntp request to get the current time and sets it.
 Upon completion it forces a time resync through w32tm.exe just to make sure the drift is minimal.
